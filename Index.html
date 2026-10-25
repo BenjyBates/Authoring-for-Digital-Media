@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    
+    <meta charset="utf-8" />
+
+    <title></title>
+
+    <link rel="stylesheet" href="StyleSheet.css">
+
+
+        <!---------------------------------------------Bouncing Text Effect -->
+    <style>
+        .floating-text {
+            font-size: 50px;
+            font-weight: bold;
+            display: inline-block; 
+            
+            animation: bounce 10s ease-in-out infinite;
+        }
+
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0); 
+            }
+            50% {
+                transform: translateY(-20px); 
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!---------------------------------------------Main Header -->
+
+    <header class="mainHeader">
+
+        <a href="index.html" class= mainHeaderLogo><img src="https://img.itch.zone/aW1nLzEzODAwODk1LnBuZw==/original/mkhijL.png"></a>
+
+        <nav class="mainHeaderLinks">
+
+            <a href="https://store.steampowered.com/search/?developer=Benjy%20Bates"><img src="Icons/st.png"></a>
+            <a href="https://benjybates.itch.io/"><img src="Icons/iio.png"></a>
+            <a href="https://soundcloud.com/benjy-lovely-time-bates"><img src="Icons/sc.png"></a>
+            <a href="https://open.spotify.com/artist/5BKK9eRkq0df0XH8d3Q9Pb"><img src="Icons/sf.png"></a>
+            <a href="https://music.apple.com/us/artist/benjy-bates/854214834"><img src="Icons/a.png"></a>
+            <a href="https://www.youtube.com/channel/UCWPMkEohi6Fj3lmpnh3i0Xw"><img src="Icons/yt.png"></a>
+            <a href="https://letterboxd.com/benjybates/"><img src="Icons/lb.png"></a>
+            <a><img src="Icons/gm.png"></a>
+
+        </nav>
+
+    </header>
+
+    <!---------------------------------------------Home Content -->
+
+    <main class="homePage">
+        <section class="homePageGrid">
+
+            <a href="games.html" class="homePageBox">
+                <img src="GameHeaders/o9.png" alt="">
+                <h1 class="floating-text">Games</h1>
+            </a>
+
+            <a href="music.html" class="homePageBox">
+
+                <h1 class="floating-text">Music</h1>
+            </a>
+
+            <a href="cv.html" class="homePageBox">
+                <h1 class="floating-text">Experience</h1>
+            </a>
+
+        </section>
+    </main>
+
+
+</body>
+</html>

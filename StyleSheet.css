@@ -1,0 +1,190 @@
+﻿@font-face {
+    font-family: 'Kiwi Soda';
+    src: url('Fonts/KiwiSoda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Kiwi Soda', sans-serif;
+    background-image: url(https://drive.google.com/thumbnail?id=1fhYI7gZ2xd8rrrv4MtNEHHZ7D--SJkWW&sz=s4000);
+    color: white;
+}
+
+h1
+{
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*MAIN HEADER*/
+
+.mainHeader {
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+}
+
+.mainHeaderLogo img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.mainHeaderLogo:hover {
+    background: var(--accent);
+    transform: translateY(-3px);
+}
+
+.mainHeaderLinks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mainHeaderLinks a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.mainHeaderLinks img {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+}
+
+.mainHeaderLinks a:hover {
+    background: var(--accent);
+    transform: translateY(-3px);
+}
+
+/*home page stuff*/
+
+.homePage {
+    max-width: 1200px;
+    margin: 30px auto 70px;
+    padding: 0 24px;
+}
+
+.homePageGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .1px;
+}
+
+.homePageBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.homePageBox:hover {
+    transform: translateY(-4px);
+}
+
+
+/*gamesPage*/
+.gamesPage {
+    width: 100%;
+}
+
+.featuredGame {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0px;
+}
+
+.featuredGame img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.steamEmbed {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.steamEmbed iframe {
+    display: block;
+    width: 100%;
+    height: 190px;
+    border: none;
+}
+
+.itchScreens {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+}
+
+.itchScreens img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+}
+
+.gamesRest
+{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+}
+
+/*Music*/
+.musicGridMain {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+}
+
+.musicGridMain .embedStyle {
+    width: 100%;
+}
+
+
+.musicGridA {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+}
+
+.musicGridA .embedStyle {
+    width: 100%;
+}
+
+.musicGridB {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+}
+
+.musicGridB .embedStyle {
+    width: 100%;
+}
